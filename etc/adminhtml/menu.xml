@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Pengo
+ * 
+ * NOTICE OF LICENSE
+ * 
+ * This source file is subject to the Pengo.com license that is
+ * available through the world-wide-web at this URL:
+ * 
+ * 
+ * DISCLAIMER
+ * 
+ * Do not edit or add to this file if you wish to upgrade this extension to newer
+ * version in the future.
+ * 
+ * @category   Pengo
+ * @package    Pengo_Brand
+ * @copyright  Copyright (c) 2016 Pengo (http://www.pengo.mx/)
+ * @license    
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../Backend/etc/menu.xsd">
+	<menu> 
+		<add id="Pengo_Brand::brand" title="Brand" module="Pengo_Brand" sortOrder="40" resource="Pengo_Brand::brand" parent="Pengo_All::Pengo_All"/>  
+		<add id="Pengo_Brand::brand_new" title="Add New Brand" module="Pengo_Brand" sortOrder="10" parent="Pengo_Brand::brand" action="vesbrand/brand/new" resource="Pengo_Brand::brand"/> 
+		<add id="Pengo_Brand::brand_manage" title="Manage Brands" module="Pengo_Brand" sortOrder="20" parent="Pengo_Brand::brand" action="vesbrand/brand/index" resource="Pengo_Brand::brand"/> 
+		<add id="Pengo_Brand::brand_group_add_new" title="Add New Group" module="Pengo_Brand" sortOrder="30" parent="Pengo_Brand::brand" action="vesbrand/group/new" resource="Pengo_Brand::group"/> 
+		<add id="Pengo_Brand::brand_group_manage" title="Manage Groups" module="Pengo_Brand" sortOrder="40" parent="Pengo_Brand::brand" action="vesbrand/group/index" resource="Pengo_Brand::group"/> 
+        <add id="Pengo_Brand::configuration" title="Configuration" module="Pengo_Brand" sortOrder="50"
+            parent="Pengo_Brand::brand" action="adminhtml/system_config/edit/section/vesbrand" resource="Pengo_Brand::config_brand"/>
+	</menu>
+</config>
